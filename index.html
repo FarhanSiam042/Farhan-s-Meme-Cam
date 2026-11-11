@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Meme Cam: make a face, get a meme</title>
+    <meta name="description" content="Make faces or gestures at your webcam and the matching meme pops up." />
+    <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- link previews (iMessage, Instagram, Discord, X): these need the full address -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Meme Cam" />
+    <meta property="og:title" content="Meme Cam: make a face, get a meme" />
+    <meta property="og:description" content="Make faces or gestures at your webcam and the matching meme pops up." />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <script>
+      // apply the saved theme before first paint (no flash)
+      try {
+        const t = localStorage.getItem("memecam.theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <header id="topbar"></header>
+    <main id="view"></main>
+    <footer id="footer"></footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript><p style="padding: 24px">Meme Cam needs JavaScript to use your camera.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

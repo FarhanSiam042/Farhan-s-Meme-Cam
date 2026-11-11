@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="92" fill="#fff"/>
+  <!-- traced from catherinee.md's cat doodle -->
+  <g fill="none" stroke="#111" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" transform="translate(10 -6)">
+    <path d="M100 152 L108 104 L150 128"/>
+    <path d="M244 128 L290 116 L292 160"/>
+    <ellipse cx="190" cy="218" rx="132" ry="96"/>
+    <path d="M104 183 L160 190"/>
+    <path d="M236 187 L288 187"/>
+    <path d="M168 268 L198 214 L234 266"/>
+  </g>
+</svg>

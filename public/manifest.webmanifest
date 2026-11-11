@@ -1,0 +1,13 @@
+{
+  "name": "Meme Cam",
+  "short_name": "Meme Cam",
+  "description": "Make faces or gestures at your webcam and the matching meme pops up.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121110",
+  "theme_color": "#121110",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}
